@@ -1,7 +1,10 @@
 package main
 
 import (
+	"fmt"
 	"log"
+
+	// "github.com/diasPedroWiley/loldex-go/controller"
 
 	"github.com/diasPedroWiley/loldex-go/controller"
 	"github.com/gin-gonic/gin"
@@ -17,6 +20,7 @@ func inital() {
 
 func main() {
 	r := gin.Default()
-	r.GET("/champions", controller.GetChampions)
+	fmt.Println("Hello")
+	r.GET("/ping", controller.GetChampions)
 	r.Run()
 }
