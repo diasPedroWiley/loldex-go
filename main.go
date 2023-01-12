@@ -4,8 +4,6 @@ import (
 	"fmt"
 	"log"
 
-	// "github.com/diasPedroWiley/loldex-go/controller"
-
 	"github.com/diasPedroWiley/loldex-go/controller"
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
@@ -21,6 +19,6 @@ func inital() {
 func main() {
 	r := gin.Default()
 	fmt.Println("Hello")
-	r.GET("/ping", controller.GetChampions)
+	r.GET("/champions", controller.GetChampions)
 	r.Run()
 }
